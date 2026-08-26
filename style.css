@@ -1,0 +1,150 @@
+/* 全体 */
+body{
+    margin:0;
+    background:#f3f3f3;
+    font-family:sans-serif;
+}
+
+/* ヘッダー */
+header{
+    background:#333;
+    color:white;
+    padding:20px;/*内側の余白*/
+    text-align:center;
+    font-size:24px;
+}
+
+/*ボタン*/
+button{
+    background:#4169e1;/*ボタン*/
+    color:white;/*ボタンの文字*/
+    border:none;/*枠線*/
+    border-radius:8px;/*角の丸さ*/
+    padding:10px 20px;/*押しやすく*/
+}
+button:hover{
+    background:#191970;
+}
+
+/* ゲーム画面 */
+#game{
+    max-width:800px;/*ゲームの幅*/
+    width:100%;
+    margin:30px auto;/*上下30px,左右は自動で余白*/
+}
+
+.question{
+    background:white;
+    margin:30px 0;
+    padding:25px;
+    border-radius:10px;
+    border:2px solid #ddd;
+}
+.questionImage{
+    display:block;
+    margin:auto;
+    max-width:100%;
+}
+
+/* タイトル */
+.question h2{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+/* 問題文 */
+.question p{
+    font-size:22px;
+    line-height:1.8;
+}
+
+/* 入力欄 */
+.question input{
+    width:70%;
+    padding:10px;
+    font-size:20px;
+    margin-top:15px;
+}
+
+/* ヒント */
+.hintImage{
+    display:block;
+    margin:20px auto;
+    max-width:100%;
+}
+
+/* エンディング全体 */
+.ending{
+    text-align:center;
+    background:#fff8dc;
+    border:3px solid gold;
+    padding:40px;
+}
+/* おめでとうのとこ */
+.ending h2{
+    font-size:40px;
+    color:orange;
+    border:3px solid
+}
+.ending p{
+    font-size:24px;
+    line-height:2;
+    font-weight:600;
+}
+
+/* 正解表示 */
+#resultMessage{
+    position: fixed;/*スクロールしても画面に固定 画面に重ねる*/
+    /* 要素の左上を画面の中央に */
+    top: 50%;
+    left: 50%;
+    /* 自身の幅の半分だけ左へ自身の高さの半分だけ上へ */
+    transform: translate(-50%, -50%);
+
+    display: none;
+    /* opacity: 0;
+    transition: opacity 0.3s; */
+
+    background: rgba(0,0,0,0.8);
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 40px 80px;
+    border-radius: 20px;
+    z-index: 1000;/*手前に*/
+}
+
+/*若旦那の方*/
+#lastMsg {
+    font-family:sans-serif;
+    text-align:center;
+    background:black;
+    color: rgb(255, 255, 255);
+    padding-top:70px;
+    padding-bottom:70px;
+    text-shadow:
+    0 0 5px yellow,
+    0 0 10px yellow,
+    0 0 20px gold;
+    letter-spacing:3px;
+    /* margin-top: 60px;
+    color:rgb(255, 115, 0);
+    font-size: 20px;
+    padding-top:100px; */
+}
+
+#lastMsg h2{
+    font-size: 60px;
+}
+#lastMsg p{
+    font-size: 30px;
+}
+
+/* クレジット */
+#credit {
+    font-family:sans-serif;
+    text-align:center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
